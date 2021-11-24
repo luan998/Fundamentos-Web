@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/LogoMakr-72ZOPF.png">
 </head>
-<body>
+
+<body class="bg-color fonte">
     <!--Criando Lista no topo da página com os redirecionamentos-->
-    <ul>
+    <ul id="menu">
         <li>    
             <a href="index.html">Home</a>
         </li>
@@ -20,30 +23,63 @@
         </li>
     </ul>
     <h1>Sobre o Luan</h1>
-    <!--Conteúdo sobre mim-->
-    <p>Esse é o primeiro site em HTML, com implementação futura em CSS. Estou cursando o último módulo do bootcamp 
-        da Generation e no momento estou achando bem legal o que estou aprendendo em HTML,
-        no entanto preciso de muito testo para encher esse parágrafo então fiquem com um pouco de mussum ipsum.
-    </p>
-    <p>
-    Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Copo furadis é disculpa de bebadis,
-    arcu quam euismod magna. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Si num tem leite então bota
-    uma pinga aí cumpadi!
-    </p>
-    <!--Insersão de fotos-->
-    <img src="https://i.imgur.com/eAbP0LY.jpeg" alt="Foto do dono desse site.">
-    <p>Sim essa pessoa é literalmente o dono desse site, que editou tudo pelo VSCode.</p>
-    <h2>Agora fique com uma foto da minha gata: </h2>
-    <img src="assets/img/lily_no_balde.jpg" alt="Foto de um gato.">
+    <div class = "container">
+        <div class= "p-30">
+        <!--Conteúdo sobre mim-->
+            <p class="center">Esse é o primeiro site em HTML, com implementação futura em CSS. Estou cursando o último módulo do
+            bootcamp
+            da Generation e no momento estou achando bem legal o que estou aprendendo em HTML.
+            </p>
+            <p class="center">Hoje um dia depois estou adicionando Css ao meu programa, espero que ele fique bem bonito 
+            </p>
+            <p class="center">Sim essa pessoa é literalmente o dono desse site, que editou tudo pelo VSCode.</p>
+        </div>
+        
+        <div>
+            <!--Insersão de fotos-->
+            <img class ="br-50 wh-500 p-30" src="https://i.imgur.com/eAbP0LY.jpeg" alt="Foto do dono desse site.">
+        </div>
+        
+    </div>
+    
+    
+    <h2 class= "center">Agora fique com uma foto da minha gata: </h2>
+    <img src="assets/img/lily_no_balde.jpg" alt="Foto de um gato." class = "center2">
+    
     <!--Inserção de video de terceiros-->
     <h2>Uma boa playlist de musica:</h2>
-    <iframe width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/y0XLVPxYjoQ" 
-    title="YouTube video player"
-        frameborder="3" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
+    <div class="container">
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/y0XLVPxYjoQ" 
+        title="YouTube video player"
+            frameborder="3" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!--Rodapé da página, com links para redes sociais e ícones-->
+    <hr>
+    <footer >
+
+        <div class = "container mb-40 ">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+            <a href="https://twitter.com/home" target="_blank">
+                <img class="tm-social p-30" src="assets/img/twitter.png" alt="Logo do Twitter">
+            </a>
+            <a href="https://web.whatsapp.com" target="_blank">
+                <img class="tm-social p-30" src="assets/img/WhatsApp.png" alt="Logo do WhatsApp">
+            </a>
+        </div>
+
+        <p class= "center color">
+            Todos os direitos reservados: Luan Rodrigues &copy
+        </p>
+    </footer>
+    
 </body>
 </html>
