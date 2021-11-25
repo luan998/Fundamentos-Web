@@ -11,9 +11,11 @@
 
 <body class="bg-color fonte">
     <!--Criando Lista no topo da página com os redirecionamentos-->
+    <header>
+        <div class = 'header'>
     <ul id="menu">
         <li>    
-            <a href="index.html">Home</a>
+            <a class = "active" href="index.html">Home</a>
         </li>
         <li>
             <a href="contato.html">Contato</a>
@@ -22,7 +24,10 @@
             <a href="https://github.com/luan998">GitHub</a>
         </li>
     </ul>
-    <h1>Sobre o Luan</h1>
+    </div>
+    </header>
+
+    <h1 class = 'center'>Sobre o Luan</h1>
     <!--Div junta blocos, e fazem um ficar encima do outro, ou embaixo, mas juntos no geral-->
     <div class = "container">
         <div class= "p-30">
@@ -48,7 +53,7 @@
     <img src="assets/img/lily_no_balde.jpg" alt="Foto de um gato." class = "center2">
     
     <!--Inserção de video de terceiros-->
-    <h2>Uma boa playlist de musica:</h2>
+    <h2 class ='center'>Uma boa playlist de musica:</h2>
     <div class="container">
         <iframe 
         width="560" 
@@ -57,15 +62,16 @@
         title="YouTube video player"
             frameborder="3" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
+            allowfullscreen
+            class="mb-40">
         </iframe>
     </div>
 
     <!--Rodapé da página, com links para redes sociais e ícones-->
     <hr>
-    <footer >
+    <footer class = "site-footer">
 
-        <div class = "container mb-40 ">
+        <div class = "footer container">
             <a href="https://www.linkedin.com" target="_blank">
                 <img class="tm-social p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
             </a>
@@ -76,8 +82,7 @@
                 <img class="tm-social p-30" src="assets/img/WhatsApp.png" alt="Logo do WhatsApp">
             </a>
         </div>
-
-        <p class= "center color">
+        <p class= "footer center color">
             Todos os direitos reservados: Luan Rodrigues &copy
         </p>
     </footer>

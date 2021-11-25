@@ -34,12 +34,13 @@
     /*Cor dos botões do menu*/
     #menu li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 22.5px;
+    font-family: arial;
     }
     /* Quando passar mouse encima muda cor*/
     #menu li a:hover{
-        color:gray;
+        color:rgb(13, 8, 85);
     }
     /*Separando a imagem e o texto por um espaço no div*/
     .p-30 {
@@ -83,6 +84,81 @@
     .fonte{
         font-family: "Helvetica "
     }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0%;
+        background-color: #4d7ace;
+        overflow: hidden;
+}
+    .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+    .header a:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+}
+    .header a.active {
+        background-color: rgb(22, 86, 150);
+        color: white;
+}
+/*Tirando a margem que vem por padrão na tela*/
+body{
+    padding:0;
+    margin:0;
+}
+
+.footer {
+    overflow: hidden;
+    background-color: #4d7ace;
+    padding-bottom: 4rem;
+}
+.footer a {
+    padding: 12px;
+    border-radius: 4px;
+}
+.footer a:hover {
+    background-color: rgb(33, 35, 131);
+}
+
+/* Fazendo o footer ficar grudado ao fim da página*/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.page-wrap {
+    min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -142px; 
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+    height: 142px; 
+}
+.site-footer {
+    background: orange;
+}
+
+
+
+/**/
+
+
     /*  Teste, fazendo o vídeo centralizar e dar resize junto com a tela
     .videowrapper {
     float: none;
