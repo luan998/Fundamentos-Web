@@ -28,20 +28,20 @@
             <form>
                 <!--label cria o texto acima a label e o input referencia o que você vai digitar para essa label-->
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup='validaNome()'>
+                <div id='txtNome'></div>
                 <br>
                 <!--br pula a linha porém não é muito recomendado usar, só usei agora para exemplificar-->
                 <label for="email">Email:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id = 'txtEmail'></div>
                 <br>
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="" id="" cols="50" rows="10"></textarea><br>
-                <br>
+                <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup="validaAssunto()"></textarea><br>
+                <div id = 'txtAssunto'></div>
                 <br>
                 <!-- criar um botão -->
-                <button>Enviar</button><br>
+                <button onclick="enviar()">Enviar</button><!--on click executa a ação depois do clique-->
             </form>
             </div>
             <div class= "ml-50">
@@ -55,8 +55,10 @@
                     height="300" 
                     style="border:0;" 
                     allowfullscreen="" 
-                    loading="lazy"></iframe>
-            
+                    loading="lazy" onmousemove="mapaZoom()"[
+                    onmouseout="mapaNormal()" 
+                    id = "mapa"></iframe>
+            <!--Acima criei os 2 eventos, se o mouse tiver encima do mapa ele aumenta, se ele sair volta ao tamanho normal-->
         </div>
     </div>
     
@@ -80,6 +82,7 @@
         </p>
     </footer>
     
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>

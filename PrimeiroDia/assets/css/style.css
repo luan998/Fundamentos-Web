@@ -12,6 +12,7 @@
     }
 
     /* Container juntando e formatando imagem e texto do inder.html*/
+    
     .container{
         display: flex;
         flex-flow: row ;
@@ -59,7 +60,7 @@
         height: 45px;
         
     }
-    /*Espaçamento de margem*/
+    /*Espaçamento de margem, margem é melhor para coisas centralizadas*/
     .mb-40{
         margin-bottom: 40px;
     }
